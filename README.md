@@ -1,0 +1,2 @@
+# caeruleus
+A GTK+ theme.
