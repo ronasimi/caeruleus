@@ -1,0 +1,52 @@
+/******************
+ * gnome terminal *
+ ******************/
+VteTerminal {
+    background-color: @osd_base;
+    color: @osd_fg;
+}
+
+TerminalWindow GtkNotebook.notebook {
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+TerminalWindow .scrollbar {
+	margin: 0;
+}
+
+TerminalWindow .scrollbars-junction,
+TerminalWindow .scrollbar.trough {
+    background-color: @dark_bg_color;
+}
+
+TerminalWindow .scrollbar.button,
+TerminalWindow .scrollbar.button:active,
+TerminalWindow .scrollbar.button:active:hover {
+    color: shade(@osd_base, 0.6);
+}
+
+TerminalWindow .scrollbar.slider {
+    border-color: transparent;
+    background-color: @bg_color;
+}
+
+TerminalWindow .scrollbar.slider:hover,
+TerminalWindow .scrollbar.slider.vertical:hover {
+    border-color: transparent;
+    background-color: @selected_bg_color;
+}
+
+TerminalWindow .scrollbar.slider:active,
+TerminalWindow .scrollbar.slider.vertical:active {
+    border-color: transparent;
+    background-color: @selected_bg_color;
+}
+
+/***************
+ * font-viewer *
+ ***************/
+SushiFontWidget {
+    padding: 6px 12px;
+}

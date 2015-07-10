@@ -1,0 +1,119 @@
+/* ===================================================================
+   ! Expo view
+   ===================================================================*/
+
+.expo-background {
+    background-color: alpha(#222, .85);
+    background-repeat: repeat;
+}
+
+.expo-workspace-thumbnail-frame {
+    border: 5px rgba(0, 0, 0, 0);
+    border-image: url("expo-scale-assets/workspace-shadow.svg") 6;
+
+    &#active {
+        border: 5px rgba(0, 0, 0, 0);
+        border-image: url("expo-scale-assets/workspace-shadow.svg") 6;
+    }
+}
+
+.workspace-thumbnails {
+    spacing: 26px;
+    padding-left: 10px;
+    padding-right: 9px;
+}
+
+/* This shades the workspace thumbnails */
+.workspace-thumbnails .workspace-overview-background-shade {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.expo-workspaces-name-entry {
+    background: $panel-color;
+    height: 15px;
+    padding: 10px 12px;
+    text-align: center;
+    font-weight: bold;
+    color: $text-secondary;
+
+    &#selected {
+        background: $accent-color;
+        color: $text-active;
+    }
+
+    &:focus,
+    &#selected:focus {
+        background: $accent-color;
+        color: $accent-color;
+        selected-color: $text-primary;
+        caret-color: $text-primary;
+        caret-size: 1px;
+        selection-background-color: $accent-color;
+    }
+}
+
+.workspace-close-button {
+    background-image: url("widget-assets/close.svg");
+    height: 41px;
+    width: 41px;
+    -cinnamon-close-overlap: 28px;
+}
+
+.workspace-add-button {
+    background: $panel-color;
+    background-image: url("expo-scale-assets/plus.svg");
+    background-size: 25px 24px;
+    height: 200px;
+    width: 35px;
+
+    &:hover {
+        background-image: url("expo-scale-assets/plus-hover.svg");
+    }
+}
+
+.window-close-area {
+    border-image: url("expo-scale-assets/workspace-close-area-bg.svg") 9;
+    background-image: url("expo-scale-assets/trash.svg");
+    height: 100px;
+    width: 350px;
+}
+
+.workspace-osd {
+    background: $panel-color;
+    padding: 12px 17px;
+    color: $text-primary;
+    font-weight: bold;
+    font-size: 20pt;
+}
+/* ===================================================================
+   ! Scale
+   ===================================================================*/
+
+/* The background for the scale view */
+.workspace-overview-background-shade {
+    background-color: alpha(#000, .65);
+}
+
+.window-caption {
+    background: $panel-color;
+    color: $text-primary;
+    font-size: 9pt;
+    font-weight: bold;
+    padding: 6px 8px;
+    spacing: 25px;
+    -cinnamon-caption-spacing: 10px;
+
+    &#selected {
+        background: $accent-color;
+        color: $text-active;
+    }
+}
+
+.window-close {
+    background-image: url("widget-assets/close.svg");
+    height: 41px;
+    width: 41px;
+    -cinnamon-close-overlap: 22px;
+}
+
+.window-iconbox {}

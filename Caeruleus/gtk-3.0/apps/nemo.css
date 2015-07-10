@@ -1,0 +1,63 @@
+/*****************
+ * desktop icons *
+ *****************/
+.nemo-canvas-item {
+    border-radius: 2px;
+}
+
+.nemo-desktop.nemo-canvas-item {
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.nemo-desktop.nemo-canvas-item:active {
+    color: @fg_color;
+}
+
+.nemo-desktop.nemo-canvas-item:selected {
+    color: @selected_fg_color;
+}
+
+.nemo-desktop.nemo-canvas-item:active,
+.nemo-desktop.nemo-canvas-item:prelight,
+.nemo-desktop.nemo-canvas-item:selected {
+    text-shadow: none;
+}
+
+/***********
+ * sidebar *
+ ***********/
+NemoWindow .sidebar,
+NemoWindow .sidebar .view {
+	background-color: @sidebar_bg_color;
+	color: @sidebar_fg_color
+}
+
+NemoWindow .sidebar .view:selected,
+NemoWindow .sidebar .view:hover {
+	background-color: @selected_bg_color;
+	color: @selected_fg_color;
+}
+
+/*********************************
+ * sidebar disk space indicators *
+ *********************************/
+NemoPlacesTreeView {
+    -NemoPlacesTreeView-disk-full-bg-color: shade(@toolbar_bg_color, 0.8);
+    -NemoPlacesTreeView-disk-full-fg-color: @selected_bg_color;
+    -NemoPlacesTreeView-disk-full-bar-width: 1px;
+    -NemoPlacesTreeView-disk-full-bar-radius: 1px;
+    -NemoPlacesTreeView-disk-full-bottom-padding: 2px;
+    -NemoPlacesTreeView-disk-full-max-length: 70px;
+}
+
+NemoPlacesTreeView:selected {
+    -NemoPlacesTreeView-disk-full-bg-color: @selected_fg_color;
+    -NemoPlacesTreeView-disk-full-fg-color: shade(@selected_bg_color, 1.4);
+}
+
+NemoPlacesTreeView:hover {
+}
+
+NemoPlacesTreeView:selected:hover {
+}

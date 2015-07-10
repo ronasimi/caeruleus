@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Caeruleus
+Comment=A modern flat theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Caeruleus
+MetacityTheme=Caeruleus
+ButtonLayout=:minimize,maximize,close

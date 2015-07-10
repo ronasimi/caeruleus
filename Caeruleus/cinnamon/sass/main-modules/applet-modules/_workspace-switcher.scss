@@ -1,0 +1,34 @@
+/* ===================================================================
+     ! Workspace Switcher
+     ===================================================================*/
+
+#workspaceSwitcher { spacing: 0; }
+
+.workspace-button {
+	padding-left: 8px;
+	padding-right: 8px;
+	color: $text-secondary;
+	font-weight: bold;
+}
+
+/* Different images used in top & bottom panels. */
+.panel-top, .panel-bottom {
+	.workspace-button:outlined {
+		background: $accent-color;
+		color: $text-active;
+	}
+
+	.workspace-button:hover {
+		background: $accent-color;
+		color: $text-primary;
+	}
+
+	.workspace-button:outlined:hover {
+		background: $accent-color;
+	}
+}
+
+/* Items in the bottom panel are shifted by 1px down.
+     This fixes it for this applet specifically.
+     The global fix is in the panel module */
+.panel-bottom .workspace-button { padding-top: 1px; }

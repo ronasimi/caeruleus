@@ -1,0 +1,26 @@
+/* ===================================================================
+ * ! OSD
+ * ===================================================================*/
+
+.info-osd {
+    text-align: center;
+    font-weight: bold;
+    spacing: 1em;
+    padding: 16px;
+    color: $text-secondary;
+    background: $panel-color;
+}
+
+.osd-window {
+    spacing: 1em;
+    padding: 16px;
+    color: $text-secondary;
+    background: $panel-color;
+
+    StIcon { color: $text-primary; }
+
+    .level {
+        height: 5px;
+        color: $accent-color;
+    }
+}

@@ -1,0 +1,38 @@
+@mixin entry( $height: 22px, $width: 220px ) {
+    background: $bg-dark-color;
+    padding: 5px 12px 4px 12px;
+    height: $height;
+    width: $width;
+
+    font-size: 9pt;
+    font-weight: normal;
+
+    color: $text-secondary;
+    StIcon { color: $text-secondary; }
+}
+
+@mixin entry-focus {
+    background: $bg-dark-color;
+    font-size: 10pt;
+    font-weight: normal;
+
+    color: $text-active;
+    caret-color: $text-active;
+    caret-size: 1px;
+    selected-color: $text-active;
+    selection-background-color: $accent-color;
+    StIcon { color: $text-primary; }
+}
+/* ===================================================================
+   ! Entries
+   ===================================================================*/
+
+.popup-menu   StEntry,
+.modal-dialog StEntry,
+#notification StEntry {
+    @include entry;
+
+    &:focus {
+        @include entry-focus;
+    }
+}

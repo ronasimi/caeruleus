@@ -1,0 +1,49 @@
+/* ===================================================================
+   ! Window list
+   ===================================================================*/
+
+.window-list-box {
+    spacing: 3px;
+    padding-left: 0;
+}
+
+.window-list-item-label {
+    width: 15em;
+    min-width: 5px;
+}
+
+.window-list-item-box {
+    color: $text-secondary;
+    font-weight: bold;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/* Different images used in top & bottom panels. */
+.panel-top, .panel-bottom {
+	.window-list-item-box:hover  {
+		background: $panel-color;
+		color: $text-active;
+	}
+
+	.window-list-item-box:active,
+	.window-list-item-box:checked,
+	.window-list-item-box:focus  {
+		background: $accent-color;
+		color: $text-active;
+	}
+
+	.window-list-item-box:checked:hover,
+	.window-list-item-box:focus:hover,
+	.window-list-item-box:active:hover  {
+		color: $text-primary;
+	}
+
+	.window-list-item-demands-attention {
+		background: #ef5350;
+	}
+
+	.window-list-item-demands-attention:hover {
+		background: #f44336
+	}
+}

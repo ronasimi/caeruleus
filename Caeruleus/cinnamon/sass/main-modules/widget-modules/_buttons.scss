@@ -1,0 +1,44 @@
+/* ===================================================================
+   ! Buttons
+   ===================================================================*/
+
+/* --- normal buttons ---*/
+.modal-dialog-button,
+.notification-button,
+.notification-icon-button {
+    background: $panel-dark-color;
+    padding: 9px;
+    padding-right: 32px;
+    padding-left: 32px;
+    -st-natural-width: 80px;
+    font-weight: bold;
+    color: $text-primary;
+
+    &:hover {
+        background: $accent-color;
+    }
+
+    &:focus {
+        background: $accent-color;
+        color: $text-active;
+    }
+
+    &:active, &:pressed {
+        background: $accent-color;
+    }
+
+    &:focus:hover {
+        background: $accent-color;
+        color: $text-active;
+    }
+
+    &:focus:active, &:focus:pressed {
+        background: $accent-color;
+        color: $text-active;
+    }
+
+    &:disabled {
+        background: $bg-dark-color;
+        color: $text-disabled;
+    }
+}

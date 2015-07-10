@@ -1,0 +1,107 @@
+/* ===================================================================
+   ! Popup Menus
+   ===================================================================*/
+
+.popup-menu {
+    min-width: 100px;
+    border: 1px solid $panel-dark-color;
+
+    &-boxpointer {
+        padding: 0;
+        -arrow-background-color: $bg-color;
+        -arrow-border-width: 0;
+        -arrow-base: 0px;
+        -arrow-rise: 0px;
+        -boxpointer-gap: 1px;
+    }
+
+    &-content {
+        background: $bg-color;
+        padding: .7em 0;
+        color: $accent-color;
+    }
+
+    &-icon,  StIcon {
+        icon-size: 16px;
+        color: $text-primary;
+    }
+
+    &-item {
+        padding: .4em 1.3em;
+        spacing: .8em;
+
+        &:active {
+            background: $accent-color;
+            color: $text-active;
+
+            .popup-menu-icon, StIcon {
+                color: $text-active;
+            }
+        }
+
+        &:insensitive {
+            font-weight: normal;
+            color: $text-disabled;
+        }
+    }
+
+    &-item-dot {/*!*/}
+}
+
+
+.popup-sub-menu {
+    background: $bg-dark-color;
+    box-shadow: none;
+    background-gradient-direction: none;
+    padding: 12px 0;
+    color: $text-primary;
+
+    .popup-menu-item {
+        padding-left: 2.1em;
+    }
+
+    .popup-menu-item:active {
+        background: $accent-color;
+        color: $text-active;
+    }
+}
+
+.popup-submenu-menu-item:open {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.popup-combo-menu {
+    background: $bg-color;
+    padding: .8em .2em;
+    color: $text-primary;
+}
+
+.popup-separator-menu-item {
+    background-color: rgba(255, 255, 255, .1);
+    height: 1px;
+}
+
+.popup-slider-menu-item {
+    -slider-height: 2px;
+    -slider-background-color: $panel-dark-color;
+    -slider-border-color: rgba(0, 0, 0, 0);
+    -slider-active-background-color: $accent-color;
+    -slider-active-border-color: $panel-dark-color;
+    -slider-border-width: 2px;
+    -slider-handle-radius: 4px;
+    color: $text-secondary;
+
+    border: 0 solid transparent;
+    min-width: 15em;
+    height: 16px;
+
+    .popup-menu-item:active & {
+        -slider-handle-radius: 5px;
+        color: $text-active;
+    }
+}
+
+.popup-subtitle-menu-item {}
+
+.popup-inactive-menu-item { color: $text-secondary; }
