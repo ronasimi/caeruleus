@@ -199,7 +199,7 @@ GtkAssistant .sidebar {
     border-color: @dark_bg_color;
     background-color: @dark_bg_color;
     background-image: none;
-    color: @selected_fg_color;
+    color: @selected_bg_color;
 }
 
 .button:focus,

@@ -3,14 +3,14 @@
    ===================================================================*/
 
 .sound-button {
-    border-image: url("button-assets/button.svg") 7;
+    background: $panel-color;
     width: 22px;
     height: 22px;
     padding: 8px;
 
-    &:hover { border-image: url("button-assets/button-hover.svg") 7; }
+    &:hover { background: $accent-color; }
 
-    &:active { border-image: url("button-assets/button-pressed.svg") 7; }
+    &:active { background: $accent-color; }
 
     & StIcon {
         icon-size: 16px;
@@ -48,7 +48,7 @@
 }
 
 .sound-track-cover {
-    border-image: url("background-assets/submenu-bg.svg") 9;
+    background: $bg-dark-color;
     padding: 20px;
 }
 

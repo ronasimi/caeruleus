@@ -1,6 +1,6 @@
 # Numix GTK Theme
 
-gtk-color-scheme = "bg_color:#dedede\nfg_color:#555555\nbase_color:#f9f9f9\ntext_color:#333333\nselected_bg_color:#d64937\nselected_fg_color:#f9f9f9\ntooltip_bg_color:#2d2d2d\ntooltip_fg_color:#dedede\ntitlebar_bg_color:#2d2d2d\ntitlebar_fg_color:#dcdcdc\nmenubar_bg_color:#2d2d2d\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#2d2d2d\nmenu_fg_color:#dcdcdc\npanel_bg_color:#2d2d2d\npanel_fg_color:#dcdcdc\nlink_color:#fc6f5d"
+gtk-color-scheme = "bg_color:#f5f5f5\nfg_color:#2d2d2d\nbase_color:#f5f5f5\ntext_color:#2d2d2d\nselected_bg_color:#4a829f\nselected_fg_color:#f5f5f5\ntooltip_bg_color:#f5f5f5\ntooltip_fg_color:#2d2d2d\ntitlebar_bg_color:#444851\ntitlebar_fg_color:#f5f5f5\nmenubar_bg_color:#444851\nmenubar_fg_color:#f5f5f5\ntoolbar_bg_color:#444851\ntoolbar_fg_color:#f5f5f5\nmenu_bg_color:#f5f5f5\nmenu_fg_color:#2d2d2d\npanel_bg_color:#444851\npanel_fg_color:#f5f5f5\nlink_color:#4a829f"
 
 # Default Style
 
@@ -142,7 +142,7 @@ style "murrine-default" {
 		menustyle = 0 # 0 = none, 1 = vertical striped
 		progressbarstyle = 0 # 0 = none, 1 = diagonal striped, 2 = vertical striped
 		reliefstyle = 0 # 0 = flat, 1 = inset, 2 = shadow, 3 = shadow with gradient, 4 = stronger shadow with gradient
-		roundness = 2 # roundness of widgets
+		roundness = 0 # roundness of widgets
 		scrollbarstyle = 0 # 0 = none, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, 5 = horizontal stripes, 6 = horizontal stripes and handles
 		sliderstyle = 0 # 0 = none, 1 = handles
 		stepperstyle = 1 # 0 = standard, 1 = integrated stepper handles
@@ -169,7 +169,7 @@ style "murrine-thin" {
 
 style "murrine-notebook-bg" {
 	bg[NORMAL] = @base_color
-	bg[ACTIVE] = shade (0.87, @base_color)
+	bg[ACTIVE] = @base_color
 }
 
 style "murrine-notebook" = "murrine-notebook-bg" {
@@ -177,16 +177,16 @@ style "murrine-notebook" = "murrine-notebook-bg" {
 	ythickness = 2
 
 	engine "murrine" {
-		roundness = 2
+		roundness = 0
 	}
 }
 
 # Various Standard Widgets
 
 style "murrine-button"  = "murrine-wider" {
-	bg[NORMAL] = shade (1.08, @bg_color)
-	bg[PRELIGHT] = shade (1.10, @bg_color)
-	bg[ACTIVE] = shade (0.95, @bg_color)
+	bg[NORMAL] = @bg_color
+	bg[PRELIGHT] = shade (1.2, @selected_bg_color)
+	bg[ACTIVE] = @selected_bg_color
 	bg[INSENSITIVE] = shade (0.85, @bg_color)
 
   	engine "murrine" {
@@ -195,7 +195,7 @@ style "murrine-button"  = "murrine-wider" {
 
 style "murrine-scrollbar" {
 	bg[NORMAL] = mix (0.21, @fg_color, @bg_color)
-	bg[PRELIGHT] = mix (0.31, @fg_color, @bg_color)
+	bg[PRELIGHT] = shade (1.2, @selected_bg_color)
 	bg[ACTIVE] = @selected_bg_color
 
 	engine "murrine" {
@@ -222,7 +222,7 @@ style "murrine-scale" = "murrine-thin" {
 	bg[INSENSITIVE] = shade (0.95, @bg_color)
 
 	engine "murrine" {
-		roundness = 8
+		roundness = 0
 		gradient_shades = { 1.08, 1.08, 1.08, 1.08 }
 		border_shades = { 1.0, 1.0 }
 		trough_shades = { 1.08, 1.08 }
@@ -237,7 +237,7 @@ style "murrine-progressbar" = "murrine-thin" {
 	fg[PRELIGHT] = @selected_fg_color
 
 	engine "murrine" {
-		roundness = 2
+		roundness = 0
 		border_shades = { 1.2, 1.2 }
 		trough_border_shades = { 0.8, 0.8 }
 	}
@@ -602,7 +602,7 @@ widget_class "*GtkFileChooserWidget.GtkFileChooserDefault.GtkVBox.GtkHPaned.GtkV
 
 style "chromium-toolbar-button" {
 	engine "murrine" {
-		roundness = 2
+		roundness = 0
 		textstyle = 0
 	}
 }
