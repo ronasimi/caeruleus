@@ -7,20 +7,20 @@
     font-weight: bold;
     spacing: 1em;
     padding: 16px;
-    color: $text-secondary;
-    background: $panel-color;
+    color: $disabled_color;
+    background: $dark_bg_color;
 }
 
 .osd-window {
     spacing: 1em;
     padding: 16px;
-    color: $text-secondary;
-    background: $panel-color;
+    color: $disabled_color;
+    background: $dark_bg_color;
 
-    StIcon { color: $text-primary; }
+    StIcon { color: $fg_color; }
 
     .level {
         height: 5px;
-        color: $accent-color;
+        color: $selected_bg_color;
     }
 }

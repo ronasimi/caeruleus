@@ -7,24 +7,24 @@
 .workspace-button {
 	padding-left: 8px;
 	padding-right: 8px;
-	color: $text-secondary;
+	color: $disabled_color;
 	font-weight: bold;
 }
 
 /* Different images used in top & bottom panels. */
 .panel-top, .panel-bottom {
 	.workspace-button:outlined {
-		background: $accent-color;
-		color: $text-active;
+		background: $selected_bg_color;
+		color: $selected_fg_color;
 	}
 
 	.workspace-button:hover {
-		background: $accent-color;
-		color: $text-primary;
+		background: $selected_bg_color;
+		color: $fg_color;
 	}
 
 	.workspace-button:outlined:hover {
-		background: $accent-color;
+		background: $selected_bg_color;
 	}
 }
 

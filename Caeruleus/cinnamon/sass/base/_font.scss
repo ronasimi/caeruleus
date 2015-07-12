@@ -2,20 +2,20 @@
    ! Font
    ===================================================================*/
 
-$font-family: Droid Sans, Sans-Serif;
+$font_family: DejaVu Sans Condensed, Sans-Serif;
 
 stage {
-    font-family: $font-family;
+    font-family: $font_family;
     font-size: 9pt;
 }
 
 .cinnamon-link {
-    color: $accent-color;
+    color: $selected_bg_color;
     font-weight: normal;
     text-decoration: underline;
 
     &:hover {
-        color: lighten($accent-color, 10%);
+        color: lighten($selected_bg_color, 10%);
     }
 }
 

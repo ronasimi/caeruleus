@@ -1,18 +1,15 @@
-// Grey text uses alpha values of white & black.
-$text-primary: #2d2d2d;
-$text-secondary: #9e9e9e;
-$text-active: #f5f5f5;
-$text-disabled: #9e9e9e;
+$dark_bg_color: #444851;
+$dark_bg_color: #353A46;
+$bg_color: #f5f5f5;
+$bg_color: #9e9e9e;
+$selected_bg_color: #4a829f;
 
-// ------------------------------------------------------------
+/* color scheme */
+$bg_color: #f5f5f5;
+$fg_color: #2d2d2d;
+$selected_bg_color: #4a829f;
+$selected_fg_color: #f5f5f5;
+$disabled_color: #9e9e9e;
 
-$panel-color: #444851;
-$panel-dark-color: #353A46;
-$bg-color: #f5f5f5;
-$bg-dark-color: #9e9e9e;
-$accent-color: #4a829f;
-
-// ------------------------------------------------------------
-
-// The following selectors use modified/different colors:
-//  .cinnamon-link
+$dark_bg_color: #353a46;
+$dark_fg_color: #f5f5f5;

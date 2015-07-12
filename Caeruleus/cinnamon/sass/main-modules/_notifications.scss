@@ -3,7 +3,7 @@
    ===================================================================*/
 
 #notification {
-    background: $panel-color;
+    background: $dark_bg_color;
     padding: 16px;
     spacing-rows: 10px;
     spacing-columns: 10px;
@@ -13,12 +13,12 @@
     width: 34em;
     font-weight: bold;
     font-size: 10pt;
-    color: $text-active;
+    color: $selected_fg_color;
 
 
     &.multi-line-notification {
         padding: 16px;
-        color: $text-active;
+        color: $selected_fg_color;
     }
 
     &-scrollview {
@@ -71,6 +71,6 @@
 
 /* Notifs look inside the notification applet & other popups. */
 .popup-menu-content #notification {
-    background: $accent-color;
+    background: $selected_bg_color;
     padding: 12px;
 }

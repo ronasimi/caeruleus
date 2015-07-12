@@ -3,27 +3,27 @@
    ===================================================================*/
 
 .desklet {
-    color: $text-primary;
+    color: $fg_color;
 
     &-with-borders {
-        background: $panel-color;
-        color: $text-primary;
+        background: $dark_bg_color;
+        color: $fg_color;
         font-weight: bold;
         padding: 5px;
     }
 
     &-with-borders-and-header {
-        background: $panel-color;
-        color: $text-primary;
+        background: $dark_bg_color;
+        color: $fg_color;
         padding: 5px;
     }
 
     &-header {
-		background: $panel-color;        
+		background: $dark_bg_color;        
 		font-size: 10pt;
         font-weight: bold;
         text-shadow: none;
-        color: $text-primary;
+        color: $fg_color;
         padding: 8px 5px;
     }
 

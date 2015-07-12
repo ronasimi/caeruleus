@@ -10,8 +10,8 @@
 .alt-tab-app {}
 
 .switcher-list {
-    background: $panel-color;
-    color: $text-secondary;
+    background: $dark_bg_color;
+    color: $disabled_color;
     padding: 6px;
     font-size: 12px;
     font-weight: bold;
@@ -20,8 +20,8 @@
         padding: 10px;
 
         &:selected {
-            background: $accent-color;
-            color: $text-active;
+            background: $selected_bg_color;
+            color: $selected_fg_color;
         }
     }
 

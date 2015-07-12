@@ -3,18 +3,18 @@
    ===================================================================*/
 
 .sound-button {
-    background: $panel-color;
+    background: $dark_bg_color;
     width: 22px;
     height: 22px;
     padding: 8px;
 
-    &:hover { background: $accent-color; }
+    &:hover { background: $selected_bg_color; }
 
-    &:active { background: $accent-color; }
+    &:active { background: $selected_bg_color; }
 
     & StIcon {
         icon-size: 16px;
-        color: $text-primary;
+        color: $fg_color;
     }
 
     &-container {
@@ -34,7 +34,7 @@
 
     StIcon {
         icon-size: 16px;
-        color: $text-primary;
+        color: $fg_color;
     }
 
     StLabel {
@@ -48,7 +48,7 @@
 }
 
 .sound-track-cover {
-    background: $bg-dark-color;
+    background: $bg_color;
     padding: 20px;
 }
 
@@ -61,7 +61,7 @@
 
     StIcon {
         icon-size: 16px;
-        color: $text-primary;
+        color: $fg_color;
     }
 }
 
@@ -74,7 +74,7 @@
         icon-size: 16px;
         padding-left: 8px;
         padding-right: 8px;
-        color: $text-primary;
+        color: $fg_color;
     }
 }
 

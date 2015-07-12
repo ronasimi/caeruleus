@@ -4,11 +4,11 @@
 
 .popup-menu {
     min-width: 100px;
-    border: 1px solid $panel-dark-color;
+    border: 1px solid $dark_bg_color;
 
     &-boxpointer {
         padding: 0;
-        -arrow-background-color: $bg-color;
+        -arrow-background-color: $bg_color;
         -arrow-border-width: 0;
         -arrow-base: 0px;
         -arrow-rise: 0px;
@@ -16,14 +16,14 @@
     }
 
     &-content {
-        background: $bg-color;
+        background: $bg_color;
         padding: .7em 0;
-        color: $accent-color;
+        color: $selected_bg_color;
     }
 
     &-icon,  StIcon {
         icon-size: 16px;
-        color: $text-primary;
+        color: $fg_color;
     }
 
     &-item {
@@ -31,17 +31,17 @@
         spacing: .8em;
 
         &:active {
-            background: $accent-color;
-            color: $text-active;
+            background: $selected_bg_color;
+            color: $selected_fg_color;
 
             .popup-menu-icon, StIcon {
-                color: $text-active;
+                color: $selected_fg_color;
             }
         }
 
         &:insensitive {
             font-weight: normal;
-            color: $text-disabled;
+            color: $disabled_color;
         }
     }
 
@@ -50,19 +50,19 @@
 
 
 .popup-sub-menu {
-    background: $bg-dark-color;
+    background: $bg_color;
     box-shadow: none;
     background-gradient-direction: none;
     padding: 12px 0;
-    color: $text-primary;
+    color: $fg_color;
 
     .popup-menu-item {
         padding-left: 2.1em;
     }
 
     .popup-menu-item:active {
-        background: $accent-color;
-        color: $text-active;
+        background: $selected_bg_color;
+        color: $selected_fg_color;
     }
 }
 
@@ -72,9 +72,9 @@
 
 
 .popup-combo-menu {
-    background: $bg-color;
+    background: $bg_color;
     padding: .8em .2em;
-    color: $text-primary;
+    color: $fg_color;
 }
 
 .popup-separator-menu-item {
@@ -84,13 +84,13 @@
 
 .popup-slider-menu-item {
     -slider-height: 2px;
-    -slider-background-color: $panel-dark-color;
+    -slider-background-color: $dark_bg_color;
     -slider-border-color: rgba(0, 0, 0, 0);
-    -slider-active-background-color: $accent-color;
-    -slider-active-border-color: $panel-dark-color;
+    -slider-active-background-color: $selected_bg_color;
+    -slider-active-border-color: $dark_bg_color;
     -slider-border-width: 2px;
     -slider-handle-radius: 4px;
-    color: $text-secondary;
+    color: $disabled_color;
 
     border: 0 solid transparent;
     min-width: 15em;
@@ -98,10 +98,10 @@
 
     .popup-menu-item:active & {
         -slider-handle-radius: 5px;
-        color: $text-active;
+        color: $selected_fg_color;
     }
 }
 
 .popup-subtitle-menu-item {}
 
-.popup-inactive-menu-item { color: $text-secondary; }
+.popup-inactive-menu-item { color: $disabled_color; }

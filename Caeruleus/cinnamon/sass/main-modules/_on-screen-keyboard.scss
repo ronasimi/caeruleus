@@ -3,7 +3,7 @@
    ===================================================================*/
 
 #keyboard {
-    background: $panel-color;
+    background: $dark_bg_color;
 }
 
 .keyboard-layout {
@@ -16,24 +16,24 @@
 }
 
 .keyboard-key {
-    background: $panel-dark-color;
+    background: $dark_bg_color;
     padding: 16px;
-    color: $text-active;
+    color: $selected_fg_color;
     font-size: 12pt;
     font-weight: bold;
 
     &:hover {
-        background: $accent-color;
+        background: $selected_bg_color;
     }
 
     &:checked,
     &:active {
-        background: $accent-color;
+        background: $selected_bg_color;
     }
 
     &:grayed {
-        background: $bg-dark-color;
-        color: $text-primary;
+        background: $bg_color;
+        color: $fg_color;
     }
 }
 

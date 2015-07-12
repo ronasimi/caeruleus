@@ -19,7 +19,7 @@ StScrollBar {
 
     StButton#vhandle,
     StButton#hhandle {
-        background: $panel-color;
+        background: $dark_bg_color;
     }
 
     StButton#vhandle:hover,
@@ -28,6 +28,6 @@ StScrollBar {
     StButton#hhandle:active,
     StButton#vhandle:focus,
     StButton#hhandle:focus {
-        background: $accent-color;
+        background: $selected_bg_color;
     }
 }

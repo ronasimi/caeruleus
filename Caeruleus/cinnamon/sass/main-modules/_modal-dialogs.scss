@@ -13,10 +13,10 @@
    ===================================================================*/
 
 .modal-dialog {
-    background: $panel-color;
+    background: $dark_bg_color;
     border-radius: 0;
     padding: 0;
-    color: $text-active;
+    color: $selected_fg_color;
 
     > * {
         padding: 24px;
@@ -36,7 +36,7 @@
 .run-dialog {
 
     > * {
-        background: $panel-color;
+        background: $dark_bg_color;
         padding: 12px;
     }
 
@@ -75,7 +75,7 @@
 
 .about-uuid {
     font-size: 10px;
-    color: $text-secondary;
+    color: $disabled_color;
 }
 
 .about-description {
@@ -86,17 +86,17 @@
 .about-version {
     padding-left: 7px;
     font-size: 10px;
-    color: $text-secondary;
+    color: $disabled_color;
 }
 
 .about-icon {
     padding-right: 20px;
     padding-bottom: 14px;
-    color: $text-primary;
+    color: $fg_color;
 }
 
 .about-scrollBox {
-    background: $panel-dark-color;
+    background: $dark_bg_color;
     padding: 4px;
     padding-right: 0;
     border-radius: 0;
@@ -111,7 +111,7 @@
    ===================================================================*/
 
 #LookingGlassDialog {
-    background: $panel-color;
+    background: $dark_bg_color;
     padding: 14px;
-    color: $text-secondary;
+    color: $disabled_color;
 }

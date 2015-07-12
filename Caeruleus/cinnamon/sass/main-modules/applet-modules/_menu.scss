@@ -4,16 +4,16 @@
 
 /* Favourites */
 .menu-favorites-box {
-    background: $panel-color;
-    padding: 0.5em;
+    background: $bg_color;
+    border: 1px solid $dark_bg_color;
 }
 
 .menu-favorites-button {
     padding: 10px 12px;
 
     &:hover {
-		background: $accent-color;
-        color: $text-active;
+		background: $selected_bg_color;
+        color: $selected_fg_color;
     }
 }
 
@@ -39,14 +39,14 @@
 
     &-greyed {
         padding: 7px;
-        color: $text-disabled;
+        color: $disabled_color;
         font-style: normal;
     }
 
     &-selected {
         padding: 7px;
-        background: $accent-color;
-        color: $text-active;
+        background: $selected_bg_color;
+        color: $selected_fg_color;
     }
 
     &-label:ltr { padding-left: 5px; }
@@ -70,17 +70,17 @@
 
     &-selected {
         padding: 7px;
-        background: $accent-color;
-        color: $text-active;
+        background: $selected_bg_color;
+        color: $selected_fg_color;
     }
 
     &:highlighted {
-        background: $accent-color;
+        background: $selected_bg_color;
     }
 
     &-selected:highlighted {
-        background: $accent-color;
-        color: $text-primary;
+        background: $selected_bg_color;
+        color: $fg_color;
     }
 
     &-label:ltr { padding-left: 5px; }
@@ -91,7 +91,7 @@
 
 /* Application hover description */
 .menu-selected-app-box {
-	color: $text-primary;
+	color: $fg_color;
     padding-right: 30px;
     padding-left: 30px;
     text-align: right;

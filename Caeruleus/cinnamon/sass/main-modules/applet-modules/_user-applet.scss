@@ -5,19 +5,19 @@
 .user-box {
     padding: .8em 1.3em;
     spacing: 10px;
-    background: $panel-color;
+    background: $dark_bg_color;
 }
 
 .user-icon {
     width: 32px;
     height: 32px;
-    background: $accent-color;
+    background: $selected_bg_color;
     border: none;
     border-radius: 0;
 }
 
 .user-label {
-    color: $text-active;
+    color: $selected_fg_color;
     font-size: 10pt;
     font-weight: bold;
     margin: 0;
