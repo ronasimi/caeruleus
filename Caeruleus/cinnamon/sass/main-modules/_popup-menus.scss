@@ -67,7 +67,8 @@
 }
 
 .popup-submenu-menu-item:open {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: lighten($selected_bg_color, 10%);
+    color: $selected_fg_color;
 }
 
 

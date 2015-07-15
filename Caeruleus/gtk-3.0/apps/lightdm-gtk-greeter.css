@@ -2,9 +2,9 @@
  * panel *
  *********/
 #panel_window {
-    background-color: #353A46;
+    background-color: transparent;
     background-image: none;
-    color: #dcdcdc;
+    color: white;
     font: bold;
     text-shadow: 0 1px alpha(black, 0.5);
     icon-shadow: 0 1px alpha(black, 0.5);
@@ -51,6 +51,7 @@
 #shutdown_dialog,
 #restart_dialog {
     border-style: none;
+    border-radius: 2px;
     background-color: @lightdm_bg_color;
     color: @lightdm_fg_color;
 
@@ -109,6 +110,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: shade(@lightdm_bg_color, 0.8);
+    border-radius: 2px;
     background-color: shade(@lightdm_bg_color, 0.9);
     background-image: none;
     color: @lightdm_fg_color;
@@ -132,6 +134,7 @@
 #restart_dialog .button {
     padding: 3px 15px;
     border-width: 1px;
+    border-radius: 2px;
     border-style: solid;
     border-color: shade(@lightdm_bg_color, 0.8);
     background-color: shade(@lightdm_bg_color, 1.08);
@@ -143,6 +146,7 @@
 
 #user_image {
     padding: 3px;
+    border-radius: 2px;
 
     /* draw border using box-shadow */
     box-shadow: inset 1px 0 shade(@lightdm_bg_color, 0.7),
@@ -152,6 +156,7 @@
 }
 
 #user_image_border {
+    border-radius: 2px;
     background-color: shade(@lightdm_bg_color, 0.9);
     background-image: none;
 
@@ -165,6 +170,8 @@
     padding-top: 10px;
     padding-bottom: 0;
     border-style: none;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
     background-color: transparent;
     background-image: none;
     box-shadow: none;

@@ -1,0 +1,31 @@
+/*****************
+ * column-header *
+ *****************/
+column-header .button,
+column-header .button:active,
+column-header .button:checked {
+    border: 0;
+    padding: 10px;
+}
+
+column-header .button,
+column-header .button:active,
+column-header .button:checked,
+column-header .button:focus,
+column-header .button:active:focus,
+column-header .button:checked:focus {
+    background-color: @dark_bg_color;
+    background-image: none;
+    color: @dark_fg_color;
+}
+
+column-header .button:hover,
+column-header .button:active:hover,
+column-header .button:checked:hover,
+column-header .button:hover:focus,
+column-header .button:active:hover:focus,
+column-header .button:checked:hover:focus {
+    background-color: shade(@dark_bg_color, 0.8);
+    background-image: none;
+    color: @selected_fg_color;
+}

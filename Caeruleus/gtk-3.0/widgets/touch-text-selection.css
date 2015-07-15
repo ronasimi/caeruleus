@@ -1,0 +1,14 @@
+/*************************
+ * touch text selections *
+ *************************/
+GtkBubbleWindow {
+    background-clip: border-box;
+}
+
+GtkBubbleWindow.osd.background {
+    background-color: @osd_bg;
+}
+
+GtkBubbleWindow .toolbar {
+    background-color: transparent;
+}

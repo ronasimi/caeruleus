@@ -1,0 +1,77 @@
+/******************
+ * linked buttons *
+ *****************/
+.linked {
+	box-shadow: none;
+	border: 0;
+}
+
+.linked .button {
+	background: @bg_color;
+	border: 1px solid @selected_bg_color;
+	border-left-width: 0;
+	color: @selected_bg_color;
+}
+
+.linked .button:first-child {
+	border-left-width: 1px;
+}
+
+.linked .button:last-child {
+	border-right-width: 1px;
+}
+
+.linked .button:hover {
+	background: @selected_bg_color;
+	color: @selected_fg_color;
+}
+
+.primary-toolbar .linked {
+	border: 0;
+}
+
+.primary-toolbar .linked .button {
+	background: @selected_bg_color;
+	border: 0;
+	border-right: 1px solid @dark_bg_color;
+	border-left: 1px solid @dark_bg_color;
+}
+
+.primary-toolbar .linked .button:hover {
+	background: shade(@dark_bg_color, 0.8);
+}
+ 
+.linked:active,
+.linked:checked,
+.linked:insensitive,
+.linked:active:hover,
+.linked:checked:hover,
+.linked:insensitive:hover,
+.linked .button:active,
+.linked .button:checked,
+.linked .button:insensitive,
+.linked .button:active:hover,
+.linked .button:checked:hover,
+.linked .button:insensitive:hover {
+	background: @selected_bg_color;
+	color: @selected_fg_color;
+	border: 0;
+	box-shadow: 0;
+}
+
+.primary-toolbar .linked:active,
+.primary-toolbar .linked:checked,
+.primary-toolbar .linked:insensitive,
+.primary-toolbar .linked:active:hover,
+.primary-toolbar .linked:checked:hover,
+.primary-toolbar .linked:insensitive:hover,
+.primary-toolbar .linked .button:active,
+.primary-toolbar .linked .button:checked,
+.primary-toolbar .linked .button:insensitive,
+.primary-toolbar .linked .button:active:hover,
+.primary-toolbar .linked .button:checked:hover,
+.primary-toolbar .linked .button:insensitive:hover {
+	border-right: 1px solid @dark_bg_color;
+	border-left: 1px solid @dark_bg_color;
+	background: shade(@dark_bg_color, 0.8);
+}

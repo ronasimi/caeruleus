@@ -1,0 +1,42 @@
+/***********
+ * sidebar *
+ ***********/
+.sidebar,
+.sidebar.view,
+.sidebar .view,
+.sidebar GtkScrolledWindow {
+    background-color: @dark_bg_color;
+    color: @dark_fg_color;
+}
+
+.sidebar row:selected,
+.sidebar row:selected:hover,
+.sidebar row:selected:focus,
+.sidebar .view row:selected,
+.sidebar .view row:selected:hover,
+.sidebar .view row:selected:focus {
+    border-color: @theme_selected_bg_color;
+    background-color: @theme_selected_bg_color;
+    background-image: none;
+    color: @theme_selected_fg_color;
+}
+
+.sidebar row:prelight,
+.sidebar .view row:prelight {
+    border-color: @theme_selected_bg_color;
+    background-color: @theme_selected_bg_color;
+    background-image: none;
+    color: @theme_selected_fg_color;
+}
+
+.sidebar row:selected:prelight,
+.sidebar .view row:selected:prelight {
+    border-color: shade(@theme_selected_bg_color, 1.05);
+    background-color: shade(@theme_selected_bg_color, 1.05);
+    background-image: none;
+    color: @theme_selected_fg_color;
+}
+
+.sidebar .frame {
+    border-width: 0;
+}

@@ -1,0 +1,34 @@
+/********************
+ * various choosers *
+ ********************/
+GtkFontButton .separator,
+GtkFileChooserButton .separator {
+    /* always disable separators */
+    -GtkWidget-wide-separators: true;
+    -GtkWidget-horizontal-separator: 0;
+    -GtkWidget-vertical-separator: 0;
+}
+
+GtkFontButton GtkLabel:last-child {
+    color: alpha(currentColor, 0.7);
+}
+
+GtkFileChooserButton GtkImage:last-child {
+    color: alpha(currentColor, 0.7);
+}
+
+GtkFileChooser .pane-separator,
+GtkFileChooser .pane-separator:hover {
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: shade(@theme_bg_color, 0.8);
+    background-color: @theme_bg_color;
+    color: shade(@theme_bg_color, 0.9);
+}
+
+/* for fallback when header bar not used */
+GtkFileChooser .dialog-action-box {
+    border-width: 1px 0 0;
+    border-style: solid;
+    border-color: shade(@theme_bg_color, 0.7);
+}

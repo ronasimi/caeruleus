@@ -1,0 +1,48 @@
+/***********
+ * toolbar *
+ ***********/
+.toolbar {
+    padding: 4px;
+    border-style: none;
+    background-color: @toolbar_bg_color;
+    background-image: none;
+    color: @toolbar_fg_color;
+}
+
+.toolbar .button {
+	background: @theme_bg_color;
+    padding: 2px;
+}
+
+.toolbar .button.text-button {
+    padding: 5px;
+}
+
+.toolbar .button.image-button {
+	border-color: @selected_bg_color;
+	background: @theme_bg_color;
+	color: @selected_bg_color;
+    padding: 5px;
+}
+
+.toolbar .button.image-button:hover,
+.toolbar .button.image-button:active,
+.toolbar .button.image-button:checked,
+.toolbar .button.image-button:insensitive,
+.toolbar .button.image-button:active:hover,
+.toolbar .button.image-button:checked:hover,
+.toolbar .button.image-button:insensitive:hover {
+	border-color: @selected_bg_color;
+	background: @selected_bg_color;
+	color: @selected_fg_color;
+}
+
+.toolbar:insensitive {
+    background-color: shade(@toolbar_bg_color, 0.9);
+    color: mix(@toolbar_fg_color, @toolbar_bg_color, 0.5);
+}
+
+/* menubar toolbars */
+.toolbar.menubar {
+    -GtkToolbar-button-relief: normal;
+}

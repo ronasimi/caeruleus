@@ -314,7 +314,8 @@ StScrollBar StButton#hhandle:focus {
 }
 
 .popup-submenu-menu-item:open {
-  background-color: transparent;
+  background-color: #659bb7;
+  color: #f5f5f5;
 }
 
 .popup-combo-menu {

@@ -12,13 +12,9 @@ TerminalWindow GtkNotebook.notebook {
     border-left-width: 0;
 }
 
-TerminalWindow .scrollbar {
-	margin: 0;
-}
-
 TerminalWindow .scrollbars-junction,
 TerminalWindow .scrollbar.trough {
-    background-color: @dark_bg_color;
+    background-color: @osd_base;
 }
 
 TerminalWindow .scrollbar.button,
@@ -28,20 +24,20 @@ TerminalWindow .scrollbar.button:active:hover {
 }
 
 TerminalWindow .scrollbar.slider {
-    border-color: transparent;
-    background-color: @bg_color;
+    border-color: mix(shade(@osd_base, 0.87), @osd_fg, 0.21);
+    background-color: mix(@osd_base, @osd_fg, 0.21);
 }
 
 TerminalWindow .scrollbar.slider:hover,
 TerminalWindow .scrollbar.slider.vertical:hover {
-    border-color: transparent;
-    background-color: @selected_bg_color;
+    border-color: mix(shade(@osd_base, 0.87), @osd_fg, 0.31);
+    background-color: mix(@osd_base, @osd_fg, 0.31);
 }
 
 TerminalWindow .scrollbar.slider:active,
 TerminalWindow .scrollbar.slider.vertical:active {
-    border-color: transparent;
-    background-color: @selected_bg_color;
+    border-color: shade(@theme_selected_bg_color, 0.9);
+    background-color: @theme_selected_bg_color;
 }
 
 /***************
@@ -49,4 +45,12 @@ TerminalWindow .scrollbar.slider.vertical:active {
  ***************/
 SushiFontWidget {
     padding: 6px 12px;
+}
+
+/******************
+ * gnome calendar *
+ ******************/
+.calendar-view {
+    background-color: shade(@theme_base_color, 0.95);
+    color: @theme_text_color;
 }

@@ -1,0 +1,38 @@
+/***************
+ * progressbar *
+ ***************/
+GtkProgressBar {
+    padding: 0;
+    border-width: 1px;
+    font-size: smaller;
+    color: @theme_fg_color;
+}
+
+.progressbar,
+.progressbar row,
+.progressbar row:hover,
+.progressbar row:selected,
+.progressbar row:selected:focus {
+    border: 0;
+    background-color: @theme_selected_bg_color;
+}
+
+.progressbar.vertical {
+    background-color: @theme_selected_bg_color;
+}
+
+.trough,
+.trough row,
+.trough row:hover,
+.trough row:selected,
+.trough row:selected:focus {
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@theme_bg_color, 0.7);
+    background-color: @theme_bg_color;
+}
+
+.trough.vertical {
+    background-color: @theme_bg_color;
+    background-image: none;
+}

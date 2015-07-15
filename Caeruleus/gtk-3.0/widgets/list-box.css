@@ -1,0 +1,25 @@
+/**************
+ * list boxes *
+ **************/
+.list {
+    background-image: none;
+    background-color: transparent;
+}
+
+.list-row {
+    border: none;
+    padding: 3px;
+    background-image: none;
+    background-color: transparent;
+}
+
+.list-row:hover {
+    background-image: none;
+    background-color: shade(@theme_bg_color, 1.02);
+}
+
+.list-row:selected {
+    background-image: none;
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}

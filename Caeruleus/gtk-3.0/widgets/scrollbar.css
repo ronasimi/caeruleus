@@ -1,0 +1,58 @@
+/*************
+ * scrollbar *
+ *************/
+.scrollbar {
+    border: 0;
+    padding: 0;
+}
+
+.scrollbars-junction,
+.scrollbar.trough {
+    background-color: transparent;
+    background-image: none;
+}
+
+.scrollbar.button,
+.scrollbar.button:active,
+.scrollbar.button:checked,
+.scrollbar.button:active:hover,
+.scrollbar.button:checked:hover {
+    background-color: transparent;
+    background-image: none;
+    color: transparent;
+}
+
+.scrollbar.slider {
+	margin: 4px;
+    background-color: @dark_bg_color;
+}
+
+.scrollbar.slider:hover,
+.scrollbar.slider.vertical:hover {
+    background-color: shade(@theme_selected_bg_color, 1.2);
+}
+
+.scrollbar.slider:active,
+.scrollbar.slider.vertical:active {
+    background-color: @theme_selected_bg_color;
+}
+
+/* overlay scrollbar */
+OsThumb {
+    color: shade(@theme_bg_color, 0.7);
+}
+
+OsThumb:selected,
+OsScrollbar:selected {
+    background-color: @theme_selected_bg_color;
+}
+
+OsThumb:active,
+OsScrollbar:active {
+    background-color: @theme_selected_bg_color;
+}
+
+OsThumb:insensitive,
+OsScrollbar:insensitive {
+    background-color: shade(@theme_bg_color, 0.9);
+}

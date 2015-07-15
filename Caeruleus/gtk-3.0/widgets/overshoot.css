@@ -1,0 +1,11 @@
+/*************
+ * overshoot *
+ *************/
+.overshoot,
+.undershoot,
+GtkScrolledWindow .overshoot,
+GtkScrolledWindow .undershoot,
+.sidebar .overshoot,
+.sidebar .undershoot {
+	background: transparent;
+}

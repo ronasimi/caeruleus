@@ -1,0 +1,21 @@
+/************
+ * combobox *
+ ************/
+
+GtkComboBox .button {
+	background: @bg_color;
+	border: 1px solid shade(@bg_color, 0.7);
+	color: @selected_bg_color;
+}
+
+GtkComboBox .button:hover {
+	background: @selected_bg_color;
+	border: 1px solid @selected_bg_color;
+	color: @selected_fg_color;
+}
+
+GtkComboBox .button:insensitive {
+	background: @disabled_bg_color;
+	border: 1px solid @disabled_bg_color;
+	color: @bg_color;
+}

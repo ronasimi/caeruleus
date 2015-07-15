@@ -1,0 +1,29 @@
+/******************************
+ * suggested action buttons *
+ ******************************/
+.suggested-action.button {
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@theme_selected_bg_color, 1.2);
+    background-color: shade(@theme_selected_bg_color, 1.2);
+    background-image: none;
+    color: @theme_selected_fg_color;
+}
+
+.suggested-action.button:hover {
+    border-color: @theme_selected_bg_color;
+    background-color: @theme_bg_color;
+    color: @theme_selected_bg_color;
+}
+
+.suggested-action.button:active,
+.suggested-action.button:checked {
+    border-color: @theme_selected_bg_color;
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
+.suggested-action.button:hover:active,
+.suggested-action.button:hover:checked {
+    border-color: shade(@theme_selected_bg_color, 1.2);
+}

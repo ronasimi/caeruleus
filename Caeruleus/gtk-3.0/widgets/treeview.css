@@ -1,0 +1,21 @@
+/************
+ * treeview *
+ ************/
+GtkTreeView {
+    -GtkTreeView-vertical-separator: 0;
+
+    outline-offset: -1px;
+}
+
+GtkTreeView.dnd {
+    border-width: 1px;
+    border-style: solid;
+    border-color: @theme_selected_bg_color;
+    border-radius: 0;
+}
+
+GtkTreeView .entry {
+    border-radius: 0;
+    background-color: @theme_base_color;
+    background-image: none;
+}
