@@ -1,10 +1,6 @@
 /*****************
  * desktop icons *
  *****************/
-.nemo-canvas-item {
-    border-radius: 2px;
-}
-
 .nemo-desktop.nemo-canvas-item {
     color: white;
     text-shadow: 1px 1px black;
@@ -45,4 +41,9 @@ NemoPlacesTreeView:hover {
 }
 
 NemoPlacesTreeView:selected:hover {
+}
+
+
+NemoNotebook .notebook {
+	border-color: @dark_bg_color;
 }

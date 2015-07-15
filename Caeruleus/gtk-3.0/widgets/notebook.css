@@ -80,46 +80,35 @@
 }
 
 .notebook tab.reorderable-page:hover {
-    background-color: shade(@theme_base_color, 0.85);
+    background-color: shade(@theme_bg_color, 0.7);
     border-left: 0;
     border-right: 0;
-    /* using box shadows instead of borders due to slanted edges */
-    box-shadow: inset 0 3px alpha(black, 0.03), inset 0 2px alpha(black, 0.03), inset 0 1px alpha(black, 0.03),
-                inset 1px 0 shade(@theme_base_color, 0.7), inset -1px 0 shade(@theme_base_color, 0.7);
 }
 
 .notebook tab.reorderable-page:active {
-    background-color: shade(@theme_base_color, 0.90);
+	border-color: shade(@dark_bg_color, 1.2);
+    background-color: shade(@dark_bg_color, 1.2);
     border-left: 0;
     border-right: 0;
-    box-shadow: inset 0 3px alpha(black, 0.03), inset 0 2px alpha(black, 0.03), inset 0 1px alpha(black, 0.03),
-                inset 1px 0 shade(@theme_base_color, 0.75), inset -1px 0 shade(@theme_base_color, 0.75);
 }
 
 /* close button styling */
 .notebook tab .button,
 .notebook tab .button:active,
-.notebook tab .button:checked,
-.notebook tab .button:hover {
+.notebook tab .button:checked {
     padding: 1px;
-    border-width: 1px;
-    border-radius: 2px;
-    border-style: solid;
-    border-color: transparent;
-    background-image: none;
-    background-color: transparent;
+    border: 0;
     color: mix(@theme_text_color, @theme_base_color, 0.5);
 }
 
 .notebook tab .button:hover {
     color: @theme_text_color;
-    border-color: shade(@theme_base_color, 0.8);
+    background-color: shade(@dark_bg_color, 0.8);
 }
 
 .notebook tab .button:active,
 .notebook tab .button:checked,
 .notebook tab .button:active:hover,
 .notebook tab .button:checked:hover {
-    border-color: shade(@theme_base_color, 0.7);
-    background-color: shade(@theme_base_color, 0.95);
+    background-color: shade(@dark_bg_color, 0.7);
 }
